@@ -1,0 +1,235 @@
+<!doctype html>
+  <html lang="en">
+  
+  
+  <head>
+    <title>Validação de formulário</title>
+
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+  
+  
+  </head>
+  
+  
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+  
+  
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  
+  <h1>Validação de Formulário</h1>
+<br>
+  <h4>Nome: Evelyn Rodrigues Kelin Fabisiak</h4>
+  <h4>Disciplina: Desenvolvimento Web II</h4>
+  <h4>Professor: Ernane Gottardo</h4>
+
+  <br>
+
+  <h2 id="dif"><b>Seja bem-vindo!!!</b></h2>
+
+  <br>
+
+  <p id="alinhar">Olá, meu nome é Evelyn e este é meu trabalho 
+    de Validação de Formulário na disciplina de Desenvolvimento Web II, 
+    lecionada pelo professor Ernane Gottardo. A partir de uma tabela trabalhada
+     na disciplina de Banco de Dados, mais especificamente meu trabalho
+      avaliativo do primeiro trimestre, tirei os dados e os coloquei num
+       formulário. Neste trabalho fizemos um Deer para a Clínica Psiquiátrica 
+       Revigorar, aqui validarei os dados da tabela do paciente, que se encontra abaixo. </p>
+  
+  <div class="tabelaResponsiva">
+    <table class="tabela1" >
+      <thead>
+        <tr>
+          <th scope="col">Paciente</th>
+          <th> Tipo de Variável(SQL)</th>
+        </tr>
+      </thead>
+      
+  
+  
+        <tr class="">
+          <td scope="row">Nome</td>
+          <td>Varchar¹</td>
+        </tr>
+  
+  
+        <tr class="">
+          <td scope="row">Data de Nascimento</td>
+          <td>Date</td>
+        </tr>
+  
+  
+        <tbody>
+        
+          <td scope="row">CPF</td>
+          <td>Int</td>
+        </tr>
+  
+  
+        <tr class="">
+          <td scope="row">Genero</td>
+          <td>Char²</td>
+        </tr>
+  
+  
+        <tr class="">
+          <td scope="row">Remoneração</td>
+          <td>Int</td>
+        </tr>
+  
+  
+        <tr class="">
+          <td scope="row">E-mail</td>
+          <td>Varchar¹</td>
+        </tr>
+  
+  
+      </tbody>
+    </table>
+  </div>
+  
+  
+  <br><br>
+
+  <p>¹ Em SQL,
+     VARCHAR é um tipo de dado usado para representar uma
+      cadeia de caracteres de comprimento variável. </p>
+  
+  <p>² O SQL possui o tipo de dado CHAR para representar uma cadeia 
+    de caracteres de tamanho fixo. O tipo de dado CHAR é usado para 
+    armazenar strings de comprimento fixo. </p>
+  
+
+<p id="alinhar">A validação de formulário é um processo usado no desenvolvimento de software e design de interface para garantir que os dados que um usuário insere em um formulário sejam corretos, consistentes e adequados à finalidade pretendida. Formulários são elementos comuns de sites, aplicativos e sistemas que permitem aos usuários inserir informações como nome, endereço, número de telefone, e-mail e senha.
+
+  A validação de formulário foi projetada para evitar o envio de dados inválidos, inconsistentes ou imprecisos que podem causar problemas como erros de processamento, corrupção de dados, falhas de sistema e má experiência do usuário.</p>
+
+<br>
+  <form>
+  <fieldset>
+  
+  
+  
+  
+  
+  
+  <div class="PacNome">
+    <label for="name" class="form-label">Nome</label>
+    <input type="text"
+      class="form-control" name="nome" id="name" aria-describedby="helpId" placeholder="preencha com seu nome" required>
+   
+  </div>
+  
+  
+  <br>
+  
+  <div class="PacCPF">
+    <label for="" class="form-label">CPF</label>
+    <input type="number"
+      class="form-control" name="" id="cpf" aria-describedby="helpId" placeholder="Preencha com seu CPF" required>
+   
+  </div>
+  
+
+
+  <br>
+
+
+
+
+  <div class="PacData">
+    <label for="data" class="form-label">Data de Nascimento</label>
+    <input type="date"
+      class="form-control" name="data" id="data" aria-describedby="helpId" placeholder="" required>
+    <small id="helpId" class="form-text text-muted">Preencha com sua data de nascimento</small>
+  </div>
+  
+  
+
+
+  <br>
+  
+  <label  class="form-label">Gênero</label>
+  <div class="form-check">
+    <input type="radio" name="genero" id="masculino" value="masculino" required checked>
+    <label class="form-check-label" for="masculino">Masculino</label>
+    
+    <input type="radio" name="genero" id="feminino" value="feminino" required>
+    <label class="form-check-label" for="feminino">Feminino</label>
+  </div>
+  
+  <br>
+  
+  <div class="PacRemuneracao">
+    <label for="" class="form-label">Remuneração</label>
+    <input type="number"
+      class="form-control" name="" id="remuneracao" aria-describedby="helpId" placeholder="Qual a sua renda mensal?" required>
+   
+  </div>
+  
+  
+  <br>
+  
+  
+  <div class="PacEmail">
+    <label for="" class="form-label">Email</label>
+    <input type="email"
+      class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Digite um e-mail" required>
+   
+  </div>
+  
+  
+  <br>
+  <button type="button" class="btn btn-primary" onclick="limparFormulario()">Limpar</button>
+  <button type="submit" class="btn btn-primary" onclick="return validarForm();">Enviar</button>
+  
+  
+  
+  
+  </fieldset>
+  </form>
+  
+  
+  
+  
+  <script src="js/script.js"></script>
+
+
+  
+  </body>
+  
+  
+  </html>
+
